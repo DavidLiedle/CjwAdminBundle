@@ -1,12 +1,14 @@
 # CJW Admin for eZ Publish/eZ Platform
 
-**Please note: CJW Admin for eZ Publish/eZ Platform is a technology study only.**
+**Please note: CJW Admin for eZ Publish/eZ Platform is a technology study
+only.**
 
 **DO NOT USE FOR PRODUCTION !!!**
 
 ## Installation
 
-Note: The bundle has been developed and tested unter eZ Publish 5.4/2014.11. Tests with eZ Platform 1.8 were very limited, but promising.
+Note: The bundle has been developed and tested under eZ Publish 5.4/2014.11.
+Tests with eZ Platform 1.8 were very limited, but promising.
 
 ### Download
 
@@ -18,7 +20,8 @@ src/Cjw/AdminAppBundle
 
 ### Activate Bundle
 
-Activate the bundle by adding the following line to `EzPublishKernel.php`  (eZ Publish 5.4/2014.11) or `AppKernel.php` (eZ Platform 1.8):
+Activate the bundle by adding the following line to `EzPublishKernel.php`
+(eZ Publish 5.4/2014.11) or `AppKernel.php` (eZ Platform 1.8):
 
 ```php
 ...
@@ -28,7 +31,8 @@ new \Cjw\AdminAppBundle\CjwAdminAppBundle(),
 
 ### Add CJW Admin Routes
 
-Add the follwing lines to `ezpublish/config/routing.yml` (eZ Publish 5.4/2014.11) or `app/config/routing.yml` (eZ Platform 1.8):
+Add the following lines to `ezpublish/config/routing.yml`
+(eZ Publish 5.4/2014.11) or `app/config/routing.yml` (eZ Platform 1.8):
 
 ```yml
 _cjw_admin_app:
@@ -37,7 +41,8 @@ _cjw_admin_app:
 
 ### Check security.yml
 
-Check `ezpublish/config/security.yml` (eZ Publish 5.4/2014.11) or `app/config/security.yml` (eZ Platform 1.8) and modify it if necessary.
+Check `ezpublish/config/security.yml` (eZ Publish 5.4/2014.11) or
+`app/config/security.yml` (eZ Platform 1.8) and modify it if necessary.
 
 The `firewall/ezpublish_rest` section should be commented out.
 
@@ -81,7 +86,8 @@ $ php ezpublish/console cache:clear
 
 You invoke CJW Admin with this URL: `http://<yoursite>/adminapp`
 
-_Note: you may get a Symfony Login prompt before the CJW Admin Login page is presented._
+_Note: you may get a Symfony Login prompt before the CJW Admin Login page is
+presented._
 
-Use your normal credentials- CJW Admin honours a subset of roles, e.g. for creating new objects.
-
+Use your normal credentials- CJW Admin honors a subset of roles, e.g. for
+creating new objects.
